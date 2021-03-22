@@ -11,6 +11,50 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+.collapsible {
+  background-color: #272927eb; /* Green */
+  border: none;
+  color: #eee !important;
+  padding: 1rem !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  line-height: 0rem;
+
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(96 97 101);
+  color: rgb(255 255 255 / 88%) !important;
+  box-shadow: inset 0 0 0 2px #eee;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,9 +63,10 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A showcase of my projects and my abilities 
-					</p>
+						<img src="images/anuraj.png" alt="Avatar" style="width:400px">
+						<h1>Sushmitha's Portfolio</h1>
+						<h2>Skills and Projects 
+					</h2>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -29,17 +74,15 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sushmitha-shetty-601b7b191/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/sushmithashetty07?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -47,57 +90,64 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Sushmitha Shetty
-									</h2>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/sushmithashetty07/Midterms" class="button large">Midterm Solutions</a></li>
-								</ul>
-							</article>
-
+						<h3 style="padding:0;">About myself</h3>
+						<p style="padding:5px;"> Computer Science enthusiast and Cal State Fullerton grad looking for opportuntiies in software engineer roles </p>
+						<section class="posts">
+								<button type="button" class="collapsible">Skills <i class="arrow down"></i></button>
+								<div class="content">
+  								<p>java, python, AWS</p>
+								</div>
+						</section>
 						<!-- Posts -->
 							<section class="posts">
-								<article>
+								<button type="button" class="collapsible">Projects <i class="arrow down"></i></button>
+								<div class="content">
+  								<article>
 									<header>
-										<h2><a href="https://github.com/sushmithashetty07/FirstProject" class="image fit">Project 1<br />
-										</a></h2>
+										<h2>Interview buddy<br />
+										</h2>
 									</header>
-									<a href="#"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Description</p>
+									<p>Aiming to provide Good resource to people preparing for interviews </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/sushmithashetty07/Interview-Buddy" class="button">Link to project</a></li>
 									</ul>
 								</article>
+								<hr class="solid">
 								<article>
 									<header>
-										<h2><a href="#">Project 2<br />
-										</a></h2>
+										<h2>Weather App<br />
+										</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Description</p>
+									<p>Aim to provide accurate weather info to people </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="#" class="button">Link to project</a></li>
 									</ul>
 								</article>
-							</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
+								<hr class="solid">
+								<article>
+									<header>
+										<h2>Learn the Beat<br />
+										</h2>
+									</header>
+									<p>Aim to provide application for people to compose cool tunes</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Link to project</a></li>
+									</ul>
+								</article>
+								<hr class="solid">
+								<article>
+									<header>
+										<h2>Ride Mate<br />
+										</h2>
+									</header>
+									<p>Demo reide hailing app to help users with rides</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Link to project</a></li>
+									</ul>
+								</article>
+								<hr class="solid">
 								</div>
-							</footer>
+							</section>
 
 					</div>
 
@@ -134,5 +184,21 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 	</body>
 </html>
