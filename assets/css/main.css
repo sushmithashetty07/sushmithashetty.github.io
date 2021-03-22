@@ -18,8 +18,8 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
+	margin: 5px;
+	padding: 5px;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -37,6 +37,7 @@ ol, ul {
 	list-style: none;
 }
 
+
 blockquote, q {
 	quotes: none;
 }
@@ -51,8 +52,16 @@ table {
 	border-spacing: 0;
 }
 
+img {
+  border-radius: 70%;
+}
+
 body {
 	-webkit-text-size-adjust: none;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
 }
 
 mark {
@@ -3853,12 +3862,12 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > article {
